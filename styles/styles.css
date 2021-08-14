@@ -1,0 +1,80 @@
+@import url('./variables.css');
+
+html, body {
+    height: 100vh;
+}
+
+.header {
+    height: 20%;
+    display: flex;
+    justify-content: start;
+    background-color: var(--third);
+    width: 100%;
+}
+.create-product-form {
+    display: flex;
+    padding: 30px;
+}
+
+.input-img {
+    cursor: pointer;
+    padding-right: 50px;
+}
+input[type=file] {
+    display: none;
+}
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+    justify-content: center;
+}
+
+.container {
+    height: 100%;
+    max-width: 100%;
+}
+
+.container-body {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.main-content {
+    width: 75%;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 30px;
+}
+
+.products {
+    height: 100%;
+    width: 100%;
+    background-color: var(--third);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-shadow: var(--shadow);
+
+}
+
+.aside {
+    width: 25%;
+    min-height: 100%;
+    background-color: var(--secondary);
+}
